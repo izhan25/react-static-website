@@ -6,24 +6,13 @@ import {
   PROJECT_PHONE,
 } from "../constants/project";
 import ContactForm from "../components/ContactForm";
+import Breadrumb from "../components/Breadcrumb";
 
 function Contact() {
   return (
     <Container>
       <main id="main">
-        <section className="breadcrumbs">
-          <div className="container">
-            <div className="d-flex justify-content-between align-items-center">
-              <h2>Contact</h2>
-              <ol>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>Contact</li>
-              </ol>
-            </div>
-          </div>
-        </section>
+        <Breadrumb title="Contact Us" />
 
         <section
           className="contact"

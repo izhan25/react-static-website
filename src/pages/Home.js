@@ -138,8 +138,8 @@ function Home() {
             <div className="row" data-aos="fade-up">
               <div className="col-md-5 order-1 order-md-2">
                 <img
-                  src="assets/img/features-2.svg"
-                  className="img-fluid"
+                  src="assets/img/maintenance.png"
+                  className="img-fluid rounded"
                   alt=""
                 />
               </div>
@@ -162,8 +162,8 @@ function Home() {
             <div className="row" data-aos="fade-up">
               <div className="col-md-5">
                 <img
-                  src="assets/img/features-3.svg"
-                  className="img-fluid"
+                  src="assets/img/pool.jpeg"
+                  className="img-fluid rounded"
                   alt=""
                 />
               </div>
@@ -197,8 +197,8 @@ function Home() {
             <div className="row" data-aos="fade-up">
               <div className="col-md-5 order-1 order-md-2">
                 <img
-                  src="assets/img/features-4.svg"
-                  className="img-fluid"
+                  src="assets/img/electro-mechanical.jpg"
+                  className="img-fluid rounded"
                   alt=""
                 />
               </div>

@@ -26,19 +26,22 @@ function Header({ transparent }) {
               <Link to="/about">About Us</Link>
             </li>
             <li className="drop-down">
-              <Link to="">Services</Link>
+              <Link to="/services">Services</Link>
               <ul>
                 <li>
-                  <Link to="!#">Estate Agent</Link>
+                  <Link to="/services#estate-agency">Estate Agent</Link>
                 </li>
                 <li>
-                  <Link to="!#">Swimming Pool</Link>
+                  <Link to="/services#swimming-pool">Swimming Pool</Link>
                 </li>
                 <li>
-                  <Link to="!#">Electro Mechanical</Link>
+                  <Link to="/services#ectro-mechanical">Electro Mechanical</Link>
                 </li>
                 <li>
-                  <Link to="!#">Gardening</Link>
+                  <Link to="/services#gardening">Gardening</Link>
+                </li>
+                <li>
+                  <Link to="/services#maintenance">Maintenance</Link>
                 </li>
               </ul>
             </li>

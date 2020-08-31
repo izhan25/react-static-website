@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PROJECT_NAME, PROJECT_ADDRESS, PROJECT_PHONE, PROJECT_EMAIL } from "../constants/project";
+import {
+  PROJECT_NAME,
+  PROJECT_ADDRESS,
+  PROJECT_PHONE,
+  PROJECT_EMAIL,
+  PROJECT_SHORT_OVERVIEW,
+} from "../constants/project";
 
 function Footer() {
   return (
@@ -15,9 +21,7 @@ function Footer() {
           <div className="row">
             <div className="col-lg-6">
               <h4>Our Newsletter</h4>
-              <p>
-                Subscribe our news letter for updates
-              </p>
+              <p>Subscribe our news letter for updates</p>
             </div>
             <div className="col-lg-6">
               <form>
@@ -49,11 +53,11 @@ function Footer() {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/terms-of-service">Terms of service</Link>
+                  <span>Terms of service</span>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/privacy-policy">Privacy policy</Link>
+                  <span>Privacy policy</span>
                 </li>
               </ul>
             </div>
@@ -75,7 +79,9 @@ function Footer() {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="/services/electro-mechanical">Electro Mechanincal</Link>
+                  <Link to="/services/electro-mechanical">
+                    Electro Mechanincal
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -94,11 +100,7 @@ function Footer() {
 
             <div className="col-lg-3 col-md-6 footer-info">
               <h3>About {PROJECT_NAME}</h3>
-              <p>
-                Established in the UAE since 2018, {PROJECT_NAME} develops,
-                manages and executes FM strategies to maximize the performance and
-                lifecycle of client assets.
-              </p>
+              <p>{PROJECT_SHORT_OVERVIEW}</p>
               <div className="social-links mt-3">
                 <Link to="!#" className="twitter">
                   <i className="bx bxl-twitter"></i>
@@ -127,7 +129,8 @@ function Footer() {
           . All Rights Reserved
         </div>
         <div className="credits">
-          Designed by <Link to="https://facebook.com/my-dream">MyDream Solutions</Link>
+          Designed by{" "}
+          <Link to="https://facebook.com/my-dream">MyDream Solutions</Link>
         </div>
       </div>
     </footer>

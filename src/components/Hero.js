@@ -1,5 +1,5 @@
 import React from "react";
-import { PROJECT_NAME } from "../constants/project";
+import { PROJECT_NAME, PROJECT_OVERVIEW } from "../constants/project";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -19,12 +19,7 @@ function Hero() {
               Welcome to <span>{PROJECT_NAME}</span>
             </h2>
             <p className="animated fadeInUp">
-              Established in the UAE since 2018, {PROJECT_NAME} develops,
-              manages and executes FM strategies to maximize the performance and
-              lifecycle of client assets. From residential and commercial
-              through to large-scale retail properties, we offer maintenance,
-              cleaning and specialist services with best in-class service
-              delivery and sustainability performance.
+              {PROJECT_OVERVIEW}
             </p>
             <Link to="/about" className="btn-get-started animated fadeInUp">
               Read More
@@ -50,7 +45,11 @@ function Hero() {
           <div className="carousel-container">
             <h2 className="animated fadeInDown">Our Vision</h2>
             <p className="animated fadeInUp">
-              To become an top brand in the industry.
+              To be an ever-positive contributor to our clients’ operations, by
+              ensuring the safest and most professional management of their
+              facilities. We do this through constant innovation and adoption
+              evolving, global best practices, in the field of professional
+              facilities management.
             </p>
             <Link to="/about" className="btn-get-started animated fadeInUp">
               Read More

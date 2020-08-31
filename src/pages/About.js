@@ -1,8 +1,11 @@
 import React from "react";
 import Breadrumb from "../components/Breadcrumb";
 import Container from "../components/Container";
-import { Helmet } from "react-helmet";
-import { PROJECT_NAME } from "../constants/project";
+import {
+  TESTIMONIALS,
+  OUR_SKILLS,
+  FACTS,
+} from "../constants/about-page-constants";
 
 function About() {
   return (
@@ -14,7 +17,11 @@ function About() {
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
-                <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+                <img
+                  src="assets/img/about.jpg"
+                  className="img-fluid rounded"
+                  alt="about us"
+                />
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0">
                 <h3>
@@ -56,25 +63,12 @@ function About() {
         <section className="facts section-bg" data-aos="fade-up">
           <div className="container">
             <div className="row counters">
-              <div className="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">232</span>
-                <p>Clients</p>
-              </div>
-
-              <div className="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">521</span>
-                <p>Projects</p>
-              </div>
-
-              <div className="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">1,463</span>
-                <p>Hours Of Support</p>
-              </div>
-
-              <div className="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">15</span>
-                <p>Hard Workers</p>
-              </div>
+              {FACTS.map((item, index) => (
+                <div key={index} className="col-lg-3 col-6 text-center">
+                  <span data-toggle="counter-up">{item.counter}</span>
+                  <p>{item.name}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -92,61 +86,21 @@ function About() {
             </div>
 
             <div className="skills-content">
-              <div className="progress">
-                <div
-                  className="progress-bar bg-success"
-                  role="progressbar"
-                  aria-valuenow="100"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <span className="skill">
-                    HTML <i className="val">100%</i>
-                  </span>
+              {OUR_SKILLS.map((item, index) => (
+                <div key={index} className="progress">
+                  <div
+                    className={`progress-bar ${item.color}`}
+                    role="progressbar"
+                    aria-valuenow={item.value}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <span className="skill">
+                      {item.name} <i className="val">{item.value}%</i>
+                    </span>
+                  </div>
                 </div>
-              </div>
-
-              <div className="progress">
-                <div
-                  className="progress-bar bg-info"
-                  role="progressbar"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <span className="skill">
-                    CSS <i className="val">90%</i>
-                  </span>
-                </div>
-              </div>
-
-              <div className="progress">
-                <div
-                  className="progress-bar bg-warning"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <span className="skill">
-                    JavaScript <i className="val">75%</i>
-                  </span>
-                </div>
-              </div>
-
-              <div className="progress">
-                <div
-                  className="progress-bar bg-danger"
-                  role="progressbar"
-                  aria-valuenow="55"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <span className="skill">
-                    Photoshop <i className="val">55%</i>
-                  </span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -164,94 +118,18 @@ function About() {
             </div>
 
             <div className="owl-carousel testimonials-carousel">
-              <div className="testimonial-item">
-                <img
-                  src="assets/img/testimonials/testimonials-1.jpg"
-                  className="testimonial-img"
-                  alt=""
-                />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec
-                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
-                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                  semper.
-                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-
-              <div className="testimonial-item">
-                <img
-                  src="assets/img/testimonials/testimonials-2.jpg"
-                  className="testimonial-img"
-                  alt=""
-                />
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse
-                  labore quem cillum quid cillum eram malis quorum velit fore
-                  eram velit sunt aliqua noster fugiat irure amet legam anim
-                  culpa.
-                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-
-              <div className="testimonial-item">
-                <img
-                  src="assets/img/testimonials/testimonials-3.jpg"
-                  className="testimonial-img"
-                  alt=""
-                />
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint
-                  quorum nulla quem veniam duis minim tempor labore quem eram
-                  duis noster aute amet eram fore quis sint minim.
-                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-
-              <div className="testimonial-item">
-                <img
-                  src="assets/img/testimonials/testimonials-4.jpg"
-                  className="testimonial-img"
-                  alt=""
-                />
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                  multos export minim fugiat minim velit minim dolor enim duis
-                  veniam ipsum anim magna sunt elit fore quem dolore labore
-                  illum veniam.
-                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-
-              <div className="testimonial-item">
-                <img
-                  src="assets/img/testimonials/testimonials-5.jpg"
-                  className="testimonial-img"
-                  alt=""
-                />
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
-                  veniam tempor noster veniam enim culpa labore duis sunt culpa
-                  nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                  cillum quid.
-                  <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
+              {TESTIMONIALS.map((item, index) => (
+                <div key={index} className="testimonial-item">
+                  <img src={item.image} className="testimonial-img" alt="" />
+                  <h3>{item.name}</h3>
+                  <h4>{item.designation}</h4>
+                  <p>
+                    <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                    {item.quote}
+                    <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
