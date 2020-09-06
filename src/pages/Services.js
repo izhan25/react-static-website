@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import Breadrumb from "../components/Breadcrumb";
 import { Link } from "react-router-dom";
+import Image from "../components/Image";
 
 function Services() {
   return (
@@ -18,7 +19,7 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <img src="assets/img/service-details-1.jpg" alt="..." />
+                    <Image src="assets/img/service-details-1.jpg" alt="..." />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -44,7 +45,7 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <img src="assets/img/service-details-2.jpg" alt="..." />
+                    <Image src="assets/img/service-details-2.jpg" alt="..." />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -70,7 +71,7 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <img src="assets/img/service-details-3.jpg" alt="..." />
+                    <Image src="assets/img/service-details-3.jpg" alt="..." />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -96,7 +97,7 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <img src="assets/img/service-details-4.jpg" alt="..." />
+                    <Image src="assets/img/service-details-4.jpg" alt="..." />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">

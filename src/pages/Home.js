@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
 import { PROJECT_NAME } from "../constants/project";
+import Image from "../components/Image";
 
 function Home() {
   return (
@@ -60,7 +61,7 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-6 video-box">
-                <img
+                <Image
                   src="assets/img/real-estate.png"
                   className="img-fluid"
                   alt=""
@@ -107,7 +108,7 @@ function Home() {
 
             <div className="row" data-aos="fade-up">
               <div className="col-md-5">
-                <img
+                <Image
                   src="assets/img/gardening.jpg"
                   className="img-fluid rounded"
                   alt=""
@@ -137,7 +138,7 @@ function Home() {
 
             <div className="row" data-aos="fade-up">
               <div className="col-md-5 order-1 order-md-2">
-                <img
+                <Image
                   src="assets/img/maintenance.png"
                   className="img-fluid rounded"
                   alt=""
@@ -161,7 +162,7 @@ function Home() {
 
             <div className="row" data-aos="fade-up">
               <div className="col-md-5">
-                <img
+                <Image
                   src="assets/img/pool.jpeg"
                   className="img-fluid rounded"
                   alt=""
@@ -196,7 +197,7 @@ function Home() {
 
             <div className="row" data-aos="fade-up">
               <div className="col-md-5 order-1 order-md-2">
-                <img
+                <Image
                   src="assets/img/electro-mechanical.jpg"
                   className="img-fluid rounded"
                   alt=""

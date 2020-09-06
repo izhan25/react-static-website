@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import { FACTS } from "../constants/about-page-constants";
 // import { TESTIMONIALS, OUR_SKILLS } from "../constants/about-page-constants";
 import { PROJECT_NAME } from "../constants/project";
+import Image from '../components/Image';
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
-                <img
+                <Image
                   src="assets/img/about.jpg"
                   className="img-fluid rounded"
                   alt="about us"
@@ -185,7 +186,7 @@ function About() {
             <div className="owl-carousel testimonials-carousel">
               {TESTIMONIALS.map((item, index) => (
                 <div key={index} className="testimonial-item">
-                  <img src={item.image} className="testimonial-img" alt="" />
+                  <Image src={item.image} className="testimonial-img" alt="" />
                   <h3>{item.name}</h3>
                   <h4>{item.designation}</h4>
                   <p>
