@@ -19,7 +19,11 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <Image src="assets/img/service-details-1.jpg" alt="..." />
+                    <Image
+                      className="rounded"
+                      src="assets/img/gardening.jpg"
+                      alt="..."
+                    />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -32,8 +36,8 @@ function Services() {
                       nisi ut aliquip ex ea commodo consequat
                     </p>
                     <div className="read-more">
-                      <Link to="!#">
-                        <i className="icofont-arrow-right"></i> Read More
+                      <Link to="/contact">
+                        <i className="icofont-arrow-right"></i> Make An Apointment
                       </Link>
                     </div>
                   </div>
@@ -45,7 +49,11 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <Image src="assets/img/service-details-2.jpg" alt="..." />
+                    <Image
+                      className="rounded"
+                      src="assets/img/maintenance.png"
+                      alt="..."
+                    />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -58,8 +66,8 @@ function Services() {
                       beatae vitae dicta sunt explicabo
                     </p>
                     <div className="read-more">
-                      <Link to="!#">
-                        <i className="icofont-arrow-right"></i> Read More
+                      <Link to="/contact">
+                        <i className="icofont-arrow-right"></i> Make An Apointment
                       </Link>
                     </div>
                   </div>
@@ -71,7 +79,11 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <Image src="assets/img/service-details-3.jpg" alt="..." />
+                    <Image
+                      className="rounded"
+                      src="assets/img/pool.jpeg"
+                      alt="..."
+                    />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -84,8 +96,8 @@ function Services() {
                       quia dolor sit amet
                     </p>
                     <div className="read-more">
-                      <Link to="!#">
-                        <i className="icofont-arrow-right"></i> Read More
+                      <Link to="/contact">
+                        <i className="icofont-arrow-right"></i> Make An Apointment
                       </Link>
                     </div>
                   </div>
@@ -97,7 +109,11 @@ function Services() {
               >
                 <div className="card">
                   <div className="card-img">
-                    <Image src="assets/img/service-details-4.jpg" alt="..." />
+                    <Image
+                      className="rounded"
+                      src="assets/img/electro-mechanical.jpg"
+                      alt="..."
+                    />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">
@@ -110,8 +126,8 @@ function Services() {
                       aut incidunt aut
                     </p>
                     <div className="read-more">
-                      <Link to="!#">
-                        <i className="icofont-arrow-right"></i> Read More
+                      <Link to="/contact">
+                        <i className="icofont-arrow-right"></i> Make An Apointment
                       </Link>
                     </div>
                   </div>
