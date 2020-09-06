@@ -53,11 +53,7 @@ function Footer() {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <span>Terms of service</span>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <span>Privacy policy</span>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -91,9 +87,22 @@ function Footer() {
               <p>
                 {PROJECT_ADDRESS}
                 <br />
-                <strong>Phone:</strong> {PROJECT_PHONE[0]}
+                <strong>Phone:</strong>
+                <br />{" "}
+                {PROJECT_PHONE.map((item, index) => (
+                  <React.Fragment key={index}>
+                    <span>{item}</span>
+                    <br />
+                  </React.Fragment>
+                ))}
+                <strong>Email:</strong>
                 <br />
-                <strong>Email:</strong> {PROJECT_EMAIL}
+                {PROJECT_EMAIL.map((item, index) => (
+                  <React.Fragment key={index}>
+                    <span>{item}</span>
+                    <br />
+                  </React.Fragment>
+                ))}
                 <br />
               </p>
             </div>
@@ -102,16 +111,16 @@ function Footer() {
               <h3>About {PROJECT_NAME}</h3>
               <p>{PROJECT_SHORT_OVERVIEW}</p>
               <div className="social-links mt-3">
-                <Link to="!#" className="twitter">
+                <Link to="" className="twitter">
                   <i className="bx bxl-twitter"></i>
                 </Link>
-                <Link to="!#" className="facebook">
+                <Link to="" className="facebook">
                   <i className="bx bxl-facebook"></i>
                 </Link>
-                <Link to="!#" className="instagram">
+                <Link to="" className="instagram">
                   <i className="bx bxl-instagram"></i>
                 </Link>
-                <Link to="!#" className="linkedin">
+                <Link to="" className="linkedin">
                   <i className="bx bxl-linkedin"></i>
                 </Link>
               </div>
@@ -130,7 +139,13 @@ function Footer() {
         </div>
         <div className="credits">
           Designed by{" "}
-          <Link to="https://facebook.com/my-dream">MyDream Solutions</Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/HasanUrRehman786"
+          >
+            MyDream Solutions
+          </a>
         </div>
       </div>
     </footer>

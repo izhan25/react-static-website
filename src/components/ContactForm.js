@@ -100,7 +100,7 @@ function ContactForm() {
       <div className="text-center">
         <button
           type="submit"
-          className={loading && "bg-dark"}
+          className={loading ? "bg-dark" : ""}
           disabled={loading}
         >
           {loading ? "Sending..." : "Send Message"}

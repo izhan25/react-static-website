@@ -1,11 +1,9 @@
 import React from "react";
 import Breadrumb from "../components/Breadcrumb";
 import Container from "../components/Container";
-import {
-  TESTIMONIALS,
-  OUR_SKILLS,
-  FACTS,
-} from "../constants/about-page-constants";
+import { FACTS } from "../constants/about-page-constants";
+// import { TESTIMONIALS, OUR_SKILLS } from "../constants/about-page-constants";
+import { PROJECT_NAME } from "../constants/project";
 
 function About() {
   return (
@@ -24,40 +22,88 @@ function About() {
                 />
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0">
-                <h3>
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
-                </h3>
+                <h3>Who We Are</h3>
                 <p className="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {PROJECT_NAME} Is a major player in Electro-Mechanical fields
+                  has a good C.V for Supplies and Turnkey Projects and well
+                  known customers in the Gulf and Pakistan market. Our Primary
+                  purpose is to complete the supply, install, service and
+                  upgrade chains in the Electro Mechanical fields. With our
+                  staff experience and technical know-how, We have become a one
+                  stop shop for our clients' total Electro-Mechanical needs.{" "}
+                  {PROJECT_NAME} enjoys a strong presence on various markets in:
                 </p>
                 <ul>
-                  <li>
-                    <i className="icofont-check-circled"></i> Ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i> Duis aute irure
-                    dolor in reprehenderit in voluptate velit.
-                  </li>
-                  <li>
-                    <i className="icofont-check-circled"></i> Ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate trideta storacalaperda
-                    mastiro dolore eu fugiat nulla pariatur.
-                  </li>
+                  <div className="row">
+                    <li className="col">
+                      <i className="icofont-check-circled"></i> TRADING
+                    </li>
+                    <li className="col">
+                      <i className="icofont-check-circled"></i> MAINTENANCE
+                    </li>
+                  </div>
+                  <div className="row">
+                    <li className="col">
+                      <i className="icofont-check-circled"></i> CONTRACTING
+                    </li>
+                    <li className="col">
+                      <i className="icofont-check-circled"></i> MANUFACTURING
+                    </li>
+                  </div>
+                  <div className="row">
+                    <li className="col">
+                      <i className="icofont-check-circled"></i> SERVICES
+                    </li>
+                    <li className="col">
+                      <i className="icofont-check-circled"></i> DEVELOPMENT
+                    </li>
+                  </div>
                 </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum
-                </p>
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="about container" data-aos="fade-up">
+          <p>
+            Within a very competitive position, this is the result of high
+            efficiency and full autonomy in phases of:
+          </p>
+          <ul>
+            <div className="row">
+              <li className="col">
+                <i className="icofont-favourite"></i> PLANNING COORDINATION
+              </li>
+              <li className="col">
+                <i className="icofont-favourite"></i> ENGINEERING PERSONALITY
+              </li>
+            </div>
+            <div className="row">
+              <li className="col">
+                <i className="icofont-favourite"></i> QUALITY CONTROL
+              </li>
+              <li className="col">
+                <i className="icofont-favourite"></i> AFTER SALES
+              </li>
+            </div>
+          </ul>
+          <p>
+            Today <b>{PROJECT_NAME}</b> is one of the leading MEP Contractors
+            operating in MEP sectors, and is capable of offering full range of
+            Contracting, Engineering Services in the fields Energy, Electrical,
+            Lighting, Electro-mechanical (MEP), low current systems, Safety &
+            Security, Measurements & Meters, Process Equipment, Motors,
+            Generators, Pumps, Water, Drainage, Plumbing, Pipe lines & Fittings,
+            Oil & Gas field Services, Factorial Installations, Marking, Fencing
+            and Automatic Control, BMS & Automation, HVAC systems, Ducting.,
+            Chillers, Landscaping and Swimming Pools.
+          </p>
+          <p>
+            Every day, <b>{PROJECT_NAME}</b> offers (Optimum & Economical)
+            Quotes to its customers, required for MEP Services & Solutions
+            according to approved standards and an ever wider range of Products
+            & Services.
+          </p>
         </section>
 
         <section className="facts section-bg" data-aos="fade-up">
@@ -73,7 +119,26 @@ function About() {
           </div>
         </section>
 
-        <section className="skills" data-aos="fade-up">
+        <section className="container skills" data-aos="fade-up">
+          <h3>Working for you.</h3>
+          <p>
+            A flawless facility is a great basis for business success. We take
+            care of all the routine facility management and maintenance tasks,
+            so that you don’t have to. We’ll deliver efficiencies, employee
+            comfort, safety and reduced costs, that you may never have thought
+            possible.
+          </p>
+          <br />
+          <h3>We value our people.</h3>
+          <p>
+            We take the time to recruit dedicated professionals with values that
+            match the firm. We invest in their ongoing training, regularly
+            support them on-site, and always recognise a job well-done. It’s why
+            our best people stay with us.
+          </p>
+        </section>
+
+        {/* <section className="skills" data-aos="fade-up">
           <div className="container">
             <div className="section-title">
               <h2>Our Skills</h2>
@@ -103,9 +168,9 @@ function About() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="testimonials" data-aos="fade-up">
+        {/* <section className="testimonials" data-aos="fade-up">
           <div className="container">
             <div className="section-title">
               <h2>Tetstimonials</h2>
@@ -132,7 +197,7 @@ function About() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </Container>
   );

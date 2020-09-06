@@ -1,6 +1,6 @@
 import React from "react";
-import { PROJECT_NAME, PROJECT_OVERVIEW } from "../constants/project";
 import { Link } from "react-router-dom";
+import { HERO_CAROUSAL_ITEMS } from "../constants/home-page-constants";
 
 function Hero() {
   return (
@@ -13,62 +13,20 @@ function Hero() {
         className="container carousel carousel-fade"
         data-ride="carousel"
       >
-        <div className="carousel-item active">
-          <div className="carousel-container">
-            <h2 className="animated fadeInDown">
-              Welcome to <span>{PROJECT_NAME}</span>
-            </h2>
-            <p className="animated fadeInUp">
-              {PROJECT_OVERVIEW}
-            </p>
-            <Link to="/about" className="btn-get-started animated fadeInUp">
-              Read More
-            </Link>
+        {HERO_CAROUSAL_ITEMS.map((item, index) => (
+          <div
+            key={index}
+            className={`carousel-item ${index === 0 && "active"}`}
+          >
+            <div className="carousel-container">
+              <h2 className="animated fadeInDown">{item.title}</h2>
+              <p className="animated fadeInUp">{item.description}</p>
+              <Link to="/about" className="btn-get-started animated fadeInUp">
+                Read More
+              </Link>
+            </div>
           </div>
-        </div>
-
-        <div className="carousel-item">
-          <div className="carousel-container">
-            <h2 className="animated fadeInDown">Our Mission</h2>
-            <p className="animated fadeInUp">
-              To achieve customer satisfaction through innovative designs,
-              quality products and committed services by utilizing international
-              exposure
-            </p>
-            <Link to="/about" className="btn-get-started animated fadeInUp">
-              Read More
-            </Link>
-          </div>
-        </div>
-
-        <div className="carousel-item">
-          <div className="carousel-container">
-            <h2 className="animated fadeInDown">Our Vision</h2>
-            <p className="animated fadeInUp">
-              To be an ever-positive contributor to our clients’ operations, by
-              ensuring the safest and most professional management of their
-              facilities. We do this through constant innovation and adoption
-              evolving, global best practices, in the field of professional
-              facilities management.
-            </p>
-            <Link to="/about" className="btn-get-started animated fadeInUp">
-              Read More
-            </Link>
-          </div>
-        </div>
-
-        <div className="carousel-item">
-          <div className="carousel-container">
-            <h2 className="animated fadeInDown">What We Offer</h2>
-            <p className="animated fadeInUp">
-              Services like Swimming Pool , Gardening, Electro-Mechanical and
-              more
-            </p>
-            <Link to="/about" className="btn-get-started animated fadeInUp">
-              Read More
-            </Link>
-          </div>
-        </div>
+        ))}
 
         <a
           className="carousel-control-prev"

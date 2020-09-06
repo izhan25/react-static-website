@@ -35,7 +35,9 @@ function Contact() {
                     <div className="info-box">
                       <i className="bx bx-envelope"></i>
                       <h3>Email Us</h3>
-                      <p>{PROJECT_EMAIL}</p>
+                      {PROJECT_EMAIL.map((item, index) => (
+                        <p key={index}>{item}</p>
+                      ))}
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -66,7 +68,8 @@ function Contact() {
           <div className="container-fluid p-0">
             <iframe
               title="address"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4299.380930063433!2d67.13825121746065!3d25.022736450535774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb346f552badeb9%3A0x3ca73c50782da8ae!2sSector%20T%20Gulshan-e-Maymar%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1599388684247!5m2!1sen!2s"
+              aria-hidden="false"
               style={{ border: 0 }}
             ></iframe>
           </div>
