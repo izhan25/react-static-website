@@ -100,10 +100,11 @@ function Home() {
             <div className="section-title">
               <h2>Features</h2>
               <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
+                We are a company that is very varsatile and can provide more
+                than expected in a low and reasonable budget. Following is a
+                glimps of services that we offer to our customers. Our bussiness
+                moto is very clear and that is{" "}
+                <i>"You Trust us and we amaze you by providing you the best"</i>
               </p>
             </div>
 
