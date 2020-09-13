@@ -8,8 +8,8 @@ function Image(props) {
     <>
       {!loaded && (
         <div
-          className="h-100 w-100 d-flex justify-content-center align-items-center"
-          style={{ backgroundColor: "#c7c7c7" }}
+          className="h-100 w-100 d-flex justify-content-center align-items-center p-5"
+          style={{ backgroundColor: "#c7c7c7", height: 300 }}
         >
           <Loader type="TailSpin" color="white" />
         </div>
