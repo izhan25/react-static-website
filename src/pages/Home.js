@@ -78,15 +78,16 @@ function Home() {
                   </h4>
                   <p className="description">
                     We also provide real estate agency and property consultancy.
-                    {PROJECT_NAME} is the leading property website in the Pakistan connecting
-                    buyers, sellers and tenants, so that every real estate
-                    requirement in the region is fulfilled in a seamless,
-                    user-friendly manner.Going above and beyond just providing a
-                    database of available listings for rent and sale, {PROJECT_NAME} has
-                    taken the onus of becoming the most reliable source for ‘all
-                    things real estate’. In the Pakistan today, every question that a
-                    potential end user could encounter is answered through the
-                    resources {PROJECT_NAME} has created.
+                    {PROJECT_NAME} is the leading property website in the
+                    Pakistan connecting buyers, sellers and tenants, so that
+                    every real estate requirement in the region is fulfilled in
+                    a seamless, user-friendly manner.Going above and beyond just
+                    providing a database of available listings for rent and
+                    sale, {PROJECT_NAME} has taken the onus of becoming the most
+                    reliable source for ‘all things real estate’. In the
+                    Pakistan today, every question that a potential end user
+                    could encounter is answered through the resources{" "}
+                    {PROJECT_NAME} has created.
                   </p>
                 </div>
               </div>
@@ -115,24 +116,28 @@ function Home() {
                 />
               </div>
               <div className="col-md-7 pt-4">
-                <h3>
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
-                </h3>
+                <h3>Gardening Services</h3>
                 <p className="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  We facilitate communities, individuals, organizations and
+                  institutions in soft and hard landscaping, organic lawn care
+                  services, provision and supply of gardening accessories,
+                  plants, shrubs, trees, organic fertilizers and weeds
+                  solutions.
                 </p>
                 <ul>
                   <li>
-                    <i className="icofont-check"></i> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <i className="icofont-check"></i> Lawn maintenance services
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Duis aute irure dolor in
-                    reprehenderit in voluptate velit.
+                    <i className="icofont-check"></i> Landscape design services
                   </li>
                 </ul>
+                <Link
+                  to="/services/gardening"
+                  className="btn btn-primary btn-sm"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
@@ -145,53 +150,57 @@ function Home() {
                 />
               </div>
               <div className="col-md-7 pt-5 order-2 order-md-1">
-                <h3>Corporis temporibus maiores provident</h3>
+                <h3>Maintenance Services</h3>
                 <p className="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  We have a professional and experienced plumbers, electricians,
+                  carpenters, wood workers, painters, tinsmiths, handymans,
+                  architects and construction workers. We can help you with all
+                  type of repairing and installation solution and any other
+                  related services at your convenient time. We guarantee best
+                  price and your 100% satisfaction.
                 </p>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum
-                </p>
+                <Link
+                  to="/services/maintenance"
+                  className="btn btn-primary btn-sm"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
             <div className="row" data-aos="fade-up">
-              <div className="col-md-5">
+              <div className="col-md-5 mb-3">
                 <Image
                   src="assets/img/pool.jpeg"
                   className="img-fluid rounded"
                   alt=""
                 />
               </div>
-              <div className="col-md-7 pt-5">
-                <h3>
-                  Sunt consequatur ad ut est nulla consectetur reiciendis animi
-                  voluptas
-                </h3>
-                <p>
-                  Cupiditate placeat cupiditate placeat est ipsam culpa.
-                  Delectus quia minima quod. Sunt saepe odit aut quia voluptatem
-                  hic voluptas dolor doloremque.
+              <div className="col-md-7 pt-2">
+                <h3>Swimming Pool Services</h3>
+                <p className="font-italic">
+                  We have been serving our clients widely for over a decade in
+                  all major cities across the Pakistan. Do you dream of have a
+                  beautiful and private swimming pool in your backyard? Are you
+                  looking for the best swimming pool construction company in the
+                  market? Search no more because your search ends at us. We
+                  favilitate with:
                 </p>
                 <ul>
                   <li>
-                    <i className="icofont-check"></i> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <i className="icofont-check"></i> Private Swimming Pool
                   </li>
                   <li>
-                    <i className="icofont-check"></i> Duis aute irure dolor in
-                    reprehenderit in voluptate velit.
-                  </li>
-                  <li>
-                    <i className="icofont-check"></i> Facilis ut et voluptatem
-                    aperiam. Autem soluta ad fugiat.
+                    <i className="icofont-check"></i> Commercial Or Public
+                    Swimming Pool
                   </li>
                 </ul>
+                <Link
+                  to="/services/swimming-pool"
+                  className="btn btn-primary btn-sm"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
@@ -204,21 +213,19 @@ function Home() {
                 />
               </div>
               <div className="col-md-7 pt-5 order-2 order-md-1">
-                <h3>
-                  Quas et necessitatibus eaque impedit ipsum animi consequatur
-                  incidunt in
-                </h3>
+                <h3>Electro Mechanical Services</h3>
                 <p className="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {PROJECT_NAME} undertakes all aspects of Electrical and
+                  Mechanical engineering as Principal or Trade Contractor, in
+                  combined or single discipline, from initial design to
+                  completion.
                 </p>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum
-                </p>
+                <Link
+                  to="/services/electro-mechanical"
+                  className="btn btn-primary btn-sm"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>

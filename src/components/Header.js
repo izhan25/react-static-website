@@ -35,7 +35,7 @@ function Header({ transparent }) {
                   <Link to="/services/swimming-pool">Swimming Pool</Link>
                 </li>
                 <li>
-                  <Link to="/services/ectro-mechanical">Electro Mechanical</Link>
+                  <Link to="/services/electro-mechanical">Electro Mechanical</Link>
                 </li>
                 <li>
                   <Link to="/services/gardening">Gardening</Link>
