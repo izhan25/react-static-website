@@ -4,7 +4,7 @@ import Container from "../components/Container";
 import { FACTS } from "../constants/about-page-constants";
 // import { TESTIMONIALS, OUR_SKILLS } from "../constants/about-page-constants";
 import { PROJECT_NAME } from "../constants/project";
-import Image from '../components/Image';
+import Image from "../components/Image";
 
 function About() {
   return (
@@ -65,46 +65,47 @@ function About() {
           </div>
         </section>
 
-        <section className="about container" data-aos="fade-up">
-          <p>
-            Within a very competitive position, this is the result of high
-            efficiency and full autonomy in phases of:
-          </p>
-          <ul>
+        <section data-aos="fade-up" style={{ marginTop: -80 }}>
+          <div className="container">
+            <p>
+              Within a very competitive position, this is the result of high
+              efficiency and full autonomy in phases of:
+            </p>
             <div className="row">
-              <li className="col">
-                <i className="icofont-favourite"></i> PLANNING COORDINATION
-              </li>
-              <li className="col">
-                <i className="icofont-favourite"></i> ENGINEERING PERSONALITY
-              </li>
+              <div className="col">
+                <i className="icofont-favourite"></i> Planning Coordination
+              </div>
+              <div className="col">
+                <i className="icofont-favourite"></i> Engineering Personality
+              </div>
             </div>
             <div className="row">
-              <li className="col">
-                <i className="icofont-favourite"></i> QUALITY CONTROL
-              </li>
-              <li className="col">
-                <i className="icofont-favourite"></i> AFTER SALES
-              </li>
+              <div className="col">
+                <i className="icofont-favourite"></i> Quality Control
+              </div>
+              <div className="col">
+                <i className="icofont-favourite"></i> After Sales
+              </div>
             </div>
-          </ul>
-          <p>
-            Today <b>{PROJECT_NAME}</b> is one of the leading MEP Contractors
-            operating in MEP sectors, and is capable of offering full range of
-            Contracting, Engineering Services in the fields Energy, Electrical,
-            Lighting, Electro-mechanical (MEP), low current systems, Safety &
-            Security, Measurements & Meters, Process Equipment, Motors,
-            Generators, Pumps, Water, Drainage, Plumbing, Pipe lines & Fittings,
-            Oil & Gas field Services, Factorial Installations, Marking, Fencing
-            and Automatic Control, BMS & Automation, HVAC systems, Ducting.,
-            Chillers, Landscaping and Swimming Pools.
-          </p>
-          <p>
-            Every day, <b>{PROJECT_NAME}</b> offers (Optimum & Economical)
-            Quotes to its customers, required for MEP Services & Solutions
-            according to approved standards and an ever wider range of Products
-            & Services.
-          </p>
+            <p className="mt-5">
+              Today <b>{PROJECT_NAME}</b> is one of the leading MEP Contractors
+              operating in MEP sectors, and is capable of offering full range of
+              Contracting, Engineering Services in the fields Energy,
+              Electrical, Lighting, Electro-mechanical (MEP), low current
+              systems, Safety & Security, Measurements & Meters, Process
+              Equipment, Motors, Generators, Pumps, Water, Drainage, Plumbing,
+              Pipe lines & Fittings, Oil & Gas field Services, Factorial
+              Installations, Marking, Fencing and Automatic Control, BMS &
+              Automation, HVAC systems, Ducting., Chillers, Landscaping and
+              Swimming Pools.
+            </p>
+            <p>
+              Every day, <b>{PROJECT_NAME}</b> offers (Optimum & Economical)
+              Quotes to its customers, required for MEP Services & Solutions
+              according to approved standards and an ever wider range of
+              Products & Services.
+            </p>
+          </div>
         </section>
 
         <section className="facts section-bg" data-aos="fade-up">
@@ -120,23 +121,25 @@ function About() {
           </div>
         </section>
 
-        <section className="container skills" data-aos="fade-up">
-          <h3>Working for you.</h3>
-          <p>
-            A flawless facility is a great basis for business success. We take
-            care of all the routine facility management and maintenance tasks,
-            so that you don’t have to. We’ll deliver efficiencies, employee
-            comfort, safety and reduced costs, that you may never have thought
-            possible.
-          </p>
-          <br />
-          <h3>We value our people.</h3>
-          <p>
-            We take the time to recruit dedicated professionals with values that
-            match the firm. We invest in their ongoing training, regularly
-            support them on-site, and always recognise a job well-done. It’s why
-            our best people stay with us.
-          </p>
+        <section data-aos="fade-up">
+          <div className="container">
+            <h3>Working for you.</h3>
+            <p>
+              A flawless facility is a great basis for business success. We take
+              care of all the routine facility management and maintenance tasks,
+              so that you don’t have to. We’ll deliver efficiencies, employee
+              comfort, safety and reduced costs, that you may never have thought
+              possible.
+            </p>
+            <br />
+            <h3>We value our people.</h3>
+            <p>
+              We take the time to recruit dedicated professionals with values
+              that match the firm. We invest in their ongoing training,
+              regularly support them on-site, and always recognise a job
+              well-done. It’s why our best people stay with us.
+            </p>
+          </div>
         </section>
 
         {/* <section className="skills" data-aos="fade-up">
