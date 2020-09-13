@@ -1,8 +1,8 @@
-// $theme-colors: (
-//   "primary": red,
-// );
+$theme-colors: (
+  "primary": #1e4356,
+);
 
-// @import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
 
 html {
   scroll-behavior: smooth;

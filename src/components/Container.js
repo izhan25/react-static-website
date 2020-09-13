@@ -8,7 +8,7 @@ function Container({ children, transparentHeader, page }) {
 
   React.useEffect(() => {
     const script = document.createElement("script");
-    script.src = "assets/js/main.js";
+    script.src = "/assets/js/main.js";
     document.body.appendChild(script);
 
   }, []);

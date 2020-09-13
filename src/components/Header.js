@@ -29,19 +29,19 @@ function Header({ transparent }) {
               <Link to="/services">Services</Link>
               <ul>
                 <li>
-                  <Link to="/services#estate-agency">Estate Agent</Link>
+                  <Link to="/services/estate-agent">Estate Agent</Link>
                 </li>
                 <li>
-                  <Link to="/services#swimming-pool">Swimming Pool</Link>
+                  <Link to="/services/swimming-pool">Swimming Pool</Link>
                 </li>
                 <li>
-                  <Link to="/services#ectro-mechanical">Electro Mechanical</Link>
+                  <Link to="/services/ectro-mechanical">Electro Mechanical</Link>
                 </li>
                 <li>
-                  <Link to="/services#gardening">Gardening</Link>
+                  <Link to="/services/gardening">Gardening</Link>
                 </li>
                 <li>
-                  <Link to="/services#maintenance">Maintenance</Link>
+                  <Link to="/services/maintenance">Maintenance</Link>
                 </li>
               </ul>
             </li>
